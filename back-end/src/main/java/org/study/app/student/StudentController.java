@@ -1,5 +1,6 @@
 package org.study.app.student;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,12 +14,13 @@ public class StudentController {
 
 	@GetMapping
 	public List<Student> getAllstudents(){
-		return
-		Arrays.asList(   new Student(1L,"ALI","ali@gmail.com",Gender.MALE),
+		  List<Student> studentList = Arrays.asList( 
+						  new Student(1L,"ALI","ali@gmail.com",Gender.MALE),
 						 new Student(2L,"Mariam","mariam@gmail.com",Gender.FEMALE),
 						 new Student(3L,"omar","omar@gmail.com",Gender.MALE)
 					);
 				
+		  return studentList;
 		
 	}
 	
